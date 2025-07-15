@@ -1,0 +1,44 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar-brand {
+    font-weight: 700;
+}
+
+#home {
+    background-color: #007bff;
+}
+
+#home h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+#home p.lead {
+    font-size: 1.5rem;
+}
+
+section {
+    min-height: 400px;
+}
+
+footer {
+    background-color: #343a40;
+}
+
+.carousel-item img {
+    object-fit: contain;
+}
+
+#carousel-description {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #007bff;
+  margin-top: 1rem;
+  padding: 0.75rem;
+  border: 2px solid #007bff; /* Рамка синего цвета */
+  border-radius: 8px; /* Закругленные углы */
+  background-color: #e7f1ff; /* Светло-синий фон для контраста */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Легкая тень для глубины */
+}

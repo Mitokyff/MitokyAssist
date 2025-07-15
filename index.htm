@@ -56,8 +56,8 @@
     <section id="about" class="py-5">
         <div class="container">
             <h2>Über das Projekt</h2>
-            <p><strong>MitokyAssist</strong> ist ein innovatives Projekt, das einen Telegram-Bot und eine zukünftige To-Do-List-App vereint. Unser Bot nutzt Künstliche Intelligenz, um Textanfragen, Sprachnachrichten und Bildanalysen zu verarbeiten. Sie können Fragen stellen, Bildbeschreibungen erhalten oder Aufgaben verwalten.</p>
-            <p><strong>Demnächst:</strong> Die<strong> To-Do-List</strong> ist im Telegram-Bot verfügbar und ermöglicht das Erstellen und Verwalten von Aufgaben mit Befehlen wie<strong> /add, /list, /delete</strong> und<strong> /done.</strong> In Zukunft wird eine App mit Synchronisation über Ihre Telegram-ID entwickelt. Alle Daten werden sicher in einer SQLite-Datenbank gespeichert.</p>
+            <p>MitokyAssist ist ein innovatives Projekt, das einen Telegram-Bot und eine zukünftige To-Do-List-App vereint. Unser Bot nutzt Künstliche Intelligenz, um Textanfragen, Sprachnachrichten und Bildanalysen zu verarbeiten. Sie können Fragen stellen, Bildbeschreibungen erhalten oder Aufgaben verwalten.</p>
+            <p><strong>Demnächst:</strong> Die To-Do-List ist im Telegram-Bot verfügbar und ermöglicht das Erstellen und Verwalten von Aufgaben mit Befehlen wie /add, /list, /delete und /done. In Zukunft wird eine App mit Synchronisation über Ihre Telegram-ID entwickelt. Alle Daten werden sicher in einer SQLite-Datenbank gespeichert.</p>
             <h4>Verwendete Technologien:</h4>
             <ul>
                 <li>Telegram Bot API — für die Interaktion mit Nutzern</li>
@@ -145,6 +145,9 @@
             carousel.addEventListener('slide.bs.carousel', function (event) {
                 const activeItem = event.relatedTarget; // Активный слайд
                 const description = activeItem.getAttribute('data-description');
-                descriptionElement.innerHTML = description;
+                descriptionElement.textContent = description;
+            });
+        });
+    </script>
 </body>
 </html>
